@@ -7,9 +7,9 @@ $('.spoiler').append($button);
 // hide the spoiler text
 $('.spoiler span').hide();
 // when the button is pressed:
-$('.spoiler').on('click', 'button', () => {
+$('.spoiler').on('click', 'button', (event) => {
   // show the spoiler text
   $('.spoiler span').show();
   // hide the 'reveal spoiler' button
-  $('.spoiler button').hide()
+  $(event.target).hide(event.target)
 })
